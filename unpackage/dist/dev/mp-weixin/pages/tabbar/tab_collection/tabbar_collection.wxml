@@ -1,0 +1,1 @@
+<view class="content"><u-empty vue-id="7f9bb606-1" text="{{noCollectionTxt}}" mode="favor" bind:__l="__l"></u-empty></view>
