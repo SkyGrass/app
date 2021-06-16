@@ -872,7 +872,7 @@ function initData(vueOptions, context) {
     try {
       data = data.call(context); // 支持 Vue.prototype 上挂的数据
     } catch (e) {
-      if (Object({"NODE_ENV":"development","VUE_APP_NAME":"App","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"VUE_APP_NAME":"App","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.warn('根据 Vue 的 data 函数初始化小程序 data 失败，请尽量确保 data 函数中不访问 vm 对象，否则可能影响首次数据渲染速度。', data);
       }
     }
@@ -7446,7 +7446,7 @@ function type(obj) {
 
 function flushCallbacks$1(vm) {
     if (vm.__next_tick_callbacks && vm.__next_tick_callbacks.length) {
-        if (Object({"NODE_ENV":"development","VUE_APP_NAME":"App","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+        if (Object({"VUE_APP_NAME":"App","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:flushCallbacks[' + vm.__next_tick_callbacks.length + ']');
@@ -7467,14 +7467,14 @@ function nextTick$1(vm, cb) {
     //1.nextTick 之前 已 setData 且 setData 还未回调完成
     //2.nextTick 之前存在 render watcher
     if (!vm.__next_tick_pending && !hasRenderWatcher(vm)) {
-        if(Object({"NODE_ENV":"development","VUE_APP_NAME":"App","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"VUE_APP_NAME":"App","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:nextVueTick');
         }
         return nextTick(cb, vm)
     }else{
-        if(Object({"NODE_ENV":"development","VUE_APP_NAME":"App","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"VUE_APP_NAME":"App","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance$1 = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance$1.is || mpInstance$1.route) + '][' + vm._uid +
                 ']:nextMPTick');
@@ -7560,7 +7560,7 @@ var patch = function(oldVnode, vnode) {
     });
     var diffData = this.$shouldDiffData === false ? data : diff(data, mpData);
     if (Object.keys(diffData).length) {
-      if (Object({"NODE_ENV":"development","VUE_APP_NAME":"App","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"VUE_APP_NAME":"App","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + this._uid +
           ']差量更新',
           JSON.stringify(diffData));
@@ -7998,9 +7998,9 @@ module.exports = g;
 
 /***/ }),
 /* 4 */
-/*!************************************************!*\
-  !*** E:/SourceCode/MiniAppCode/App/pages.json ***!
-  \************************************************/
+/*!**************************************!*\
+  !*** E:/H5SourceCode/app/pages.json ***!
+  \**************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -8141,9 +8141,9 @@ function normalizeComponent (
 
 /***/ }),
 /* 11 */
-/*!*******************************************************!*\
-  !*** E:/SourceCode/MiniAppCode/App/uview-ui/index.js ***!
-  \*******************************************************/
+/*!*********************************************!*\
+  !*** E:/H5SourceCode/app/uview-ui/index.js ***!
+  \*********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8292,9 +8292,9 @@ var install = function install(Vue) {
 
 /***/ }),
 /* 12 */
-/*!******************************************************************!*\
-  !*** E:/SourceCode/MiniAppCode/App/uview-ui/libs/mixin/mixin.js ***!
-  \******************************************************************/
+/*!********************************************************!*\
+  !*** E:/H5SourceCode/app/uview-ui/libs/mixin/mixin.js ***!
+  \********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8365,9 +8365,9 @@ var install = function install(Vue) {
 
 /***/ }),
 /* 13 */
-/*!********************************************************************!*\
-  !*** E:/SourceCode/MiniAppCode/App/uview-ui/libs/request/index.js ***!
-  \********************************************************************/
+/*!**********************************************************!*\
+  !*** E:/H5SourceCode/app/uview-ui/libs/request/index.js ***!
+  \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8545,9 +8545,9 @@ new Request();exports.default = _default;
 
 /***/ }),
 /* 14 */
-/*!*************************************************************************!*\
-  !*** E:/SourceCode/MiniAppCode/App/uview-ui/libs/function/deepMerge.js ***!
-  \*************************************************************************/
+/*!***************************************************************!*\
+  !*** E:/H5SourceCode/app/uview-ui/libs/function/deepMerge.js ***!
+  \***************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8585,9 +8585,9 @@ deepMerge;exports.default = _default;
 
 /***/ }),
 /* 15 */
-/*!*************************************************************************!*\
-  !*** E:/SourceCode/MiniAppCode/App/uview-ui/libs/function/deepClone.js ***!
-  \*************************************************************************/
+/*!***************************************************************!*\
+  !*** E:/H5SourceCode/app/uview-ui/libs/function/deepClone.js ***!
+  \***************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8618,9 +8618,9 @@ deepClone;exports.default = _default;
 
 /***/ }),
 /* 16 */
-/*!********************************************************************!*\
-  !*** E:/SourceCode/MiniAppCode/App/uview-ui/libs/function/test.js ***!
-  \********************************************************************/
+/*!**********************************************************!*\
+  !*** E:/H5SourceCode/app/uview-ui/libs/function/test.js ***!
+  \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8859,9 +8859,9 @@ function code(value) {var len = arguments.length > 1 && arguments[1] !== undefin
 
 /***/ }),
 /* 17 */
-/*!***************************************************************************!*\
-  !*** E:/SourceCode/MiniAppCode/App/uview-ui/libs/function/queryParams.js ***!
-  \***************************************************************************/
+/*!*****************************************************************!*\
+  !*** E:/H5SourceCode/app/uview-ui/libs/function/queryParams.js ***!
+  \*****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8927,9 +8927,9 @@ queryParams;exports.default = _default;
 
 /***/ }),
 /* 18 */
-/*!*********************************************************************!*\
-  !*** E:/SourceCode/MiniAppCode/App/uview-ui/libs/function/route.js ***!
-  \*********************************************************************/
+/*!***********************************************************!*\
+  !*** E:/H5SourceCode/app/uview-ui/libs/function/route.js ***!
+  \***********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9848,9 +9848,9 @@ if (hadRuntime) {
 
 /***/ }),
 /* 22 */
-/*!**************************************************************************!*\
-  !*** E:/SourceCode/MiniAppCode/App/uview-ui/libs/function/timeFormat.js ***!
-  \**************************************************************************/
+/*!****************************************************************!*\
+  !*** E:/H5SourceCode/app/uview-ui/libs/function/timeFormat.js ***!
+  \****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9909,9 +9909,9 @@ timeFormat;exports.default = _default;
 
 /***/ }),
 /* 23 */
-/*!************************************************************************!*\
-  !*** E:/SourceCode/MiniAppCode/App/uview-ui/libs/function/timeFrom.js ***!
-  \************************************************************************/
+/*!**************************************************************!*\
+  !*** E:/H5SourceCode/app/uview-ui/libs/function/timeFrom.js ***!
+  \**************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9966,9 +9966,9 @@ timeFrom;exports.default = _default;
 
 /***/ }),
 /* 24 */
-/*!*****************************************************************************!*\
-  !*** E:/SourceCode/MiniAppCode/App/uview-ui/libs/function/colorGradient.js ***!
-  \*****************************************************************************/
+/*!*******************************************************************!*\
+  !*** E:/H5SourceCode/app/uview-ui/libs/function/colorGradient.js ***!
+  \*******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10109,9 +10109,9 @@ function colorToRgba(color) {var alpha = arguments.length > 1 && arguments[1] !=
 
 /***/ }),
 /* 25 */
-/*!********************************************************************!*\
-  !*** E:/SourceCode/MiniAppCode/App/uview-ui/libs/function/guid.js ***!
-  \********************************************************************/
+/*!**********************************************************!*\
+  !*** E:/H5SourceCode/app/uview-ui/libs/function/guid.js ***!
+  \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10160,9 +10160,9 @@ guid;exports.default = _default;
 
 /***/ }),
 /* 26 */
-/*!*********************************************************************!*\
-  !*** E:/SourceCode/MiniAppCode/App/uview-ui/libs/function/color.js ***!
-  \*********************************************************************/
+/*!***********************************************************!*\
+  !*** E:/H5SourceCode/app/uview-ui/libs/function/color.js ***!
+  \***********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10207,9 +10207,9 @@ color;exports.default = _default;
 
 /***/ }),
 /* 27 */
-/*!*************************************************************************!*\
-  !*** E:/SourceCode/MiniAppCode/App/uview-ui/libs/function/type2icon.js ***!
-  \*************************************************************************/
+/*!***************************************************************!*\
+  !*** E:/H5SourceCode/app/uview-ui/libs/function/type2icon.js ***!
+  \***************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10252,9 +10252,9 @@ type2icon;exports.default = _default;
 
 /***/ }),
 /* 28 */
-/*!***************************************************************************!*\
-  !*** E:/SourceCode/MiniAppCode/App/uview-ui/libs/function/randomArray.js ***!
-  \***************************************************************************/
+/*!*****************************************************************!*\
+  !*** E:/H5SourceCode/app/uview-ui/libs/function/randomArray.js ***!
+  \*****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10269,9 +10269,9 @@ randomArray;exports.default = _default;
 
 /***/ }),
 /* 29 */
-/*!***********************************************************************!*\
-  !*** E:/SourceCode/MiniAppCode/App/uview-ui/libs/function/addUnit.js ***!
-  \***********************************************************************/
+/*!*************************************************************!*\
+  !*** E:/H5SourceCode/app/uview-ui/libs/function/addUnit.js ***!
+  \*************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10287,9 +10287,9 @@ function addUnit() {var value = arguments.length > 0 && arguments[0] !== undefin
 
 /***/ }),
 /* 30 */
-/*!**********************************************************************!*\
-  !*** E:/SourceCode/MiniAppCode/App/uview-ui/libs/function/random.js ***!
-  \**********************************************************************/
+/*!************************************************************!*\
+  !*** E:/H5SourceCode/app/uview-ui/libs/function/random.js ***!
+  \************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10307,9 +10307,9 @@ random;exports.default = _default;
 
 /***/ }),
 /* 31 */
-/*!********************************************************************!*\
-  !*** E:/SourceCode/MiniAppCode/App/uview-ui/libs/function/trim.js ***!
-  \********************************************************************/
+/*!**********************************************************!*\
+  !*** E:/H5SourceCode/app/uview-ui/libs/function/trim.js ***!
+  \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10332,9 +10332,9 @@ trim;exports.default = _default;
 
 /***/ }),
 /* 32 */
-/*!*********************************************************************!*\
-  !*** E:/SourceCode/MiniAppCode/App/uview-ui/libs/function/toast.js ***!
-  \*********************************************************************/
+/*!***********************************************************!*\
+  !*** E:/H5SourceCode/app/uview-ui/libs/function/toast.js ***!
+  \***********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10352,9 +10352,9 @@ toast;exports.default = _default;
 
 /***/ }),
 /* 33 */
-/*!*************************************************************************!*\
-  !*** E:/SourceCode/MiniAppCode/App/uview-ui/libs/function/getParent.js ***!
-  \*************************************************************************/
+/*!***************************************************************!*\
+  !*** E:/H5SourceCode/app/uview-ui/libs/function/getParent.js ***!
+  \***************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10409,9 +10409,9 @@ function getParent(name, keys) {
 
 /***/ }),
 /* 34 */
-/*!***********************************************************************!*\
-  !*** E:/SourceCode/MiniAppCode/App/uview-ui/libs/function/$parent.js ***!
-  \***********************************************************************/
+/*!*************************************************************!*\
+  !*** E:/H5SourceCode/app/uview-ui/libs/function/$parent.js ***!
+  \*************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10437,9 +10437,9 @@ function $parent() {var name = arguments.length > 0 && arguments[0] !== undefine
 
 /***/ }),
 /* 35 */
-/*!*******************************************************************!*\
-  !*** E:/SourceCode/MiniAppCode/App/uview-ui/libs/function/sys.js ***!
-  \*******************************************************************/
+/*!*********************************************************!*\
+  !*** E:/H5SourceCode/app/uview-ui/libs/function/sys.js ***!
+  \*********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10455,9 +10455,9 @@ function sys() {
 
 /***/ }),
 /* 36 */
-/*!************************************************************************!*\
-  !*** E:/SourceCode/MiniAppCode/App/uview-ui/libs/function/debounce.js ***!
-  \************************************************************************/
+/*!**************************************************************!*\
+  !*** E:/H5SourceCode/app/uview-ui/libs/function/debounce.js ***!
+  \**************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10494,9 +10494,9 @@ debounce;exports.default = _default;
 
 /***/ }),
 /* 37 */
-/*!************************************************************************!*\
-  !*** E:/SourceCode/MiniAppCode/App/uview-ui/libs/function/throttle.js ***!
-  \************************************************************************/
+/*!**************************************************************!*\
+  !*** E:/H5SourceCode/app/uview-ui/libs/function/throttle.js ***!
+  \**************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10536,9 +10536,9 @@ throttle;exports.default = _default;
 
 /***/ }),
 /* 38 */
-/*!********************************************************************!*\
-  !*** E:/SourceCode/MiniAppCode/App/uview-ui/libs/config/config.js ***!
-  \********************************************************************/
+/*!**********************************************************!*\
+  !*** E:/H5SourceCode/app/uview-ui/libs/config/config.js ***!
+  \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10559,9 +10559,9 @@ var version = '1.8.4';var _default =
 
 /***/ }),
 /* 39 */
-/*!********************************************************************!*\
-  !*** E:/SourceCode/MiniAppCode/App/uview-ui/libs/config/zIndex.js ***!
-  \********************************************************************/
+/*!**********************************************************!*\
+  !*** E:/H5SourceCode/app/uview-ui/libs/config/zIndex.js ***!
+  \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10593,378 +10593,182 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /* 43 */,
 /* 44 */,
 /* 45 */,
-/* 46 */,
-/* 47 */,
-/* 48 */,
-/* 49 */,
-/* 50 */,
-/* 51 */,
-/* 52 */,
-/* 53 */,
-/* 54 */,
-/* 55 */,
-/* 56 */,
-/* 57 */,
-/* 58 */,
-/* 59 */,
-/* 60 */,
-/* 61 */,
-/* 62 */,
-/* 63 */,
-/* 64 */,
-/* 65 */,
-/* 66 */,
-/* 67 */,
-/* 68 */,
-/* 69 */,
-/* 70 */,
-/* 71 */,
-/* 72 */,
-/* 73 */,
-/* 74 */,
-/* 75 */,
-/* 76 */,
-/* 77 */,
-/* 78 */,
-/* 79 */,
-/* 80 */,
-/* 81 */,
-/* 82 */,
-/* 83 */,
-/* 84 */,
-/* 85 */,
-/* 86 */,
-/* 87 */,
-/* 88 */,
-/* 89 */,
-/* 90 */,
-/* 91 */,
-/* 92 */,
-/* 93 */,
-/* 94 */,
-/* 95 */,
-/* 96 */,
-/* 97 */,
-/* 98 */,
-/* 99 */,
-/* 100 */,
-/* 101 */,
-/* 102 */,
-/* 103 */,
-/* 104 */,
-/* 105 */,
-/* 106 */,
-/* 107 */,
-/* 108 */,
-/* 109 */,
-/* 110 */,
-/* 111 */,
-/* 112 */,
-/* 113 */,
-/* 114 */,
-/* 115 */,
-/* 116 */,
-/* 117 */,
-/* 118 */,
-/* 119 */,
-/* 120 */,
-/* 121 */,
-/* 122 */,
-/* 123 */,
-/* 124 */,
-/* 125 */,
-/* 126 */,
-/* 127 */,
-/* 128 */,
-/* 129 */,
-/* 130 */,
-/* 131 */,
-/* 132 */,
-/* 133 */
-/*!*******************************************************************!*\
-  !*** E:/SourceCode/MiniAppCode/App/pages/tabbar/tab_home/data.js ***!
-  \*******************************************************************/
+/* 46 */
+/*!*********************************************************!*\
+  !*** E:/H5SourceCode/app/pages/tabbar/tab_home/data.js ***!
+  \*********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });exports.data = void 0;var data = [{
-  "A": [{
-    "_id": {
-      "$oid": "60c62913e1e9391e420da9de" },
-
-    "name": "安徽",
+  "letter": "A",
+  "list": [{
     "code": "34",
-    "isclosed": false,
-    "letter": "A" }] },
+    "letter": "A",
+    "name": "安徽" }] },
 
 {
-  "B": [{
-    "_id": {
-      "$oid": "60c62913e1e9391e420da9d7" },
-
-    "name": "北京",
+  "letter": "B",
+  "list": [{
     "code": "11",
-    "isclosed": false,
-    "letter": "B" }] },
+    "letter": "B",
+    "name": "北京" }] },
 
 {
-  "C": [{
-    "_id": {
-      "$oid": "60c62913e1e9391e420da9da" },
-
-    "name": "重庆",
+  "letter": "C",
+  "list": [{
     "code": "50",
-    "isclosed": false,
-    "letter": "C" }] },
+    "letter": "C",
+    "name": "重庆" }] },
 
 {
-  "F": [{
-    "_id": {
-      "$oid": "60c62913e1e9391e420da9e1" },
-
-    "name": "福建",
+  "letter": "F",
+  "list": [{
     "code": "35",
-    "isclosed": false,
-    "letter": "F" }] },
+    "letter": "F",
+    "name": "福建" }] },
 
 {
-  "G": [{
-    "_id": {
-      "$oid": "60c62913e1e9391e420da9e4" },
-
-    "name": "广东",
+  "letter": "G",
+  "list": [{
     "code": "44",
-    "isclosed": false,
-    "letter": "G" },
+    "letter": "G",
+    "name": "广东" },
   {
-    "_id": {
-      "$oid": "60c62913e1e9391e420da9e5" },
-
-    "name": "广西",
     "code": "45",
-    "isclosed": false,
-    "letter": "G" },
+    "letter": "G",
+    "name": "广西" },
   {
-    "_id": {
-      "$oid": "60c62914e1e9391e420da9ef" },
-
-    "name": "甘肃",
     "code": "62",
-    "isclosed": false,
-    "letter": "G" },
+    "letter": "G",
+    "name": "甘肃" },
   {
-    "_id": {
-      "$oid": "60c62914e1e9391e420da9f3" },
-
-    "name": "贵州",
     "code": "52",
-    "isclosed": false,
-    "letter": "G" }] },
+    "letter": "G",
+    "name": "贵州" }] },
 
 {
-  "H": [{
-    "_id": {
-      "$oid": "60c62913e1e9391e420da9db" },
-
-    "name": "河北",
+  "letter": "H",
+  "list": [{
     "code": "13",
-    "isclosed": false,
-    "letter": "H" },
+    "letter": "H",
+    "name": "河北" },
   {
-    "_id": {
-      "$oid": "60c62913e1e9391e420da9e6" },
-
-    "name": "海南",
     "code": "46",
-    "isclosed": false,
-    "letter": "H" },
+    "letter": "H",
+    "name": "海南" },
   {
-    "_id": {
-      "$oid": "60c62913e1e9391e420da9e9" },
-
-    "name": "黑龙江",
     "code": "23",
-    "isclosed": false,
-    "letter": "H" },
+    "letter": "H",
+    "name": "黑龙江" },
   {
-    "_id": {
-      "$oid": "60c62914e1e9391e420da9ea" },
-
-    "name": "河南",
     "code": "41",
-    "isclosed": false,
-    "letter": "H" },
+    "letter": "H",
+    "name": "河南" },
   {
-    "_id": {
-      "$oid": "60c62914e1e9391e420da9eb" },
-
-    "name": "湖南",
     "code": "43",
-    "isclosed": false,
-    "letter": "H" },
+    "letter": "H",
+    "name": "湖南" },
   {
-    "_id": {
-      "$oid": "60c62914e1e9391e420da9ec" },
-
-    "name": "湖北",
     "code": "42",
-    "isclosed": false,
-    "letter": "H" }] },
+    "letter": "H",
+    "name": "湖北" }] },
 
 {
-  "J": [{
-    "_id": {
-      "$oid": "60c62913e1e9391e420da9e0" },
-
-    "name": "江苏",
+  "letter": "J",
+  "list": [{
     "code": "32",
-    "isclosed": false,
-    "letter": "J" },
+    "letter": "J",
+    "name": "江苏" },
   {
-    "_id": {
-      "$oid": "60c62913e1e9391e420da9e2" },
-
-    "name": "江西",
     "code": "36",
-    "isclosed": false,
-    "letter": "J" },
+    "letter": "J",
+    "name": "江西" },
   {
-    "_id": {
-      "$oid": "60c62913e1e9391e420da9e8" },
-
-    "name": "吉林",
     "code": "22",
-    "isclosed": false,
-    "letter": "J" }] },
+    "letter": "J",
+    "name": "吉林" }] },
 
 {
-  "L": [{
-    "_id": {
-      "$oid": "60c62913e1e9391e420da9e7" },
-
-    "name": "辽宁",
+  "letter": "L",
+  "list": [{
     "code": "21",
-    "isclosed": false,
-    "letter": "L" }] },
+    "letter": "L",
+    "name": "辽宁" }] },
 
 {
-  "N": [{
-    "_id": {
-      "$oid": "60c62913e1e9391e420da9dd" },
-
-    "name": "内蒙古",
+  "letter": "N",
+  "list": [{
     "code": "15",
-    "isclosed": false,
-    "letter": "N" },
+    "letter": "N",
+    "name": "内蒙古" },
   {
-    "_id": {
-      "$oid": "60c62914e1e9391e420da9ee" },
-
-    "name": "宁夏",
     "code": "64",
-    "isclosed": false,
-    "letter": "N" }] },
+    "letter": "N",
+    "name": "宁夏" }] },
 
 {
-  "Q": [{
-    "_id": {
-      "$oid": "60c62914e1e9391e420da9f0" },
-
-    "name": "青海",
+  "letter": "Q",
+  "list": [{
     "code": "63",
-    "isclosed": false,
-    "letter": "Q" }] },
+    "letter": "Q",
+    "name": "青海" }] },
 
 {
-  "S": [{
-    "_id": {
-      "$oid": "60c62913e1e9391e420da9d8" },
-
-    "name": "上海",
+  "letter": "S",
+  "list": [{
     "code": "31",
-    "isclosed": false,
-    "letter": "S" },
+    "letter": "S",
+    "name": "上海" },
   {
-    "_id": {
-      "$oid": "60c62913e1e9391e420da9dc" },
-
-    "name": "山西",
     "code": "14",
-    "isclosed": false,
-    "letter": "S" },
+    "letter": "S",
+    "name": "山西" },
   {
-    "_id": {
-      "$oid": "60c62913e1e9391e420da9df" },
-
-    "name": "山东",
     "code": "37",
-    "isclosed": false,
-    "letter": "S" },
+    "letter": "S",
+    "name": "山东" },
   {
-    "_id": {
-      "$oid": "60c62914e1e9391e420da9ed" },
-
-    "name": "陕西",
     "code": "61",
-    "isclosed": false,
-    "letter": "S" },
+    "letter": "S",
+    "name": "陕西" },
   {
-    "_id": {
-      "$oid": "60c62914e1e9391e420da9f2" },
-
-    "name": "四川",
     "code": "51",
-    "isclosed": false,
-    "letter": "S" }] },
+    "letter": "S",
+    "name": "四川" }] },
 
 {
-  "T": [{
-    "_id": {
-      "$oid": "60c62913e1e9391e420da9d9" },
-
-    "name": "天津",
+  "letter": "T",
+  "list": [{
     "code": "12",
-    "isclosed": false,
-    "letter": "T" }] },
+    "letter": "T",
+    "name": "天津" }] },
 
 {
-  "X": [{
-    "_id": {
-      "$oid": "60c62914e1e9391e420da9f1" },
-
-    "name": "新疆",
+  "letter": "X",
+  "list": [{
     "code": "65",
-    "isclosed": false,
-    "letter": "X" },
+    "letter": "X",
+    "name": "新疆" },
   {
-    "_id": {
-      "$oid": "60c62914e1e9391e420da9f5" },
-
-    "name": "西藏",
     "code": "54",
-    "isclosed": false,
-    "letter": "X" }] },
+    "letter": "X",
+    "name": "西藏" }] },
 
 {
-  "Y": [{
-    "_id": {
-      "$oid": "60c62914e1e9391e420da9f4" },
-
-    "name": "云南",
+  "letter": "Y",
+  "list": [{
     "code": "53",
-    "isclosed": false,
-    "letter": "Y" }] },
+    "letter": "Y",
+    "name": "云南" }] },
 
 {
-  "Z": [{
-    "_id": {
-      "$oid": "60c62913e1e9391e420da9e3" },
-
-    "name": "浙江",
+  "letter": "Z",
+  "list": [{
     "code": "33",
-    "isclosed": false,
-    "letter": "Z" }] }];exports.data = data;
+    "letter": "Z",
+    "name": "浙江" }] }];exports.data = data;
 
 /***/ })
 ]]);

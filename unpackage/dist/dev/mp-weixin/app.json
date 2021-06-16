@@ -3,7 +3,8 @@
     "pages/tabbar/tab_home/tabbar_home",
     "pages/tabbar/tab_collection/tabbar_collection",
     "pages/tabbar/tab_message/tabbar_message",
-    "pages/tabbar/tab_person/tabbar_person"
+    "pages/tabbar/tab_person/tabbar_person",
+    "pages/university/list"
   ],
   "subPackages": [],
   "window": {
@@ -44,5 +45,6 @@
       }
     ]
   },
-  "usingComponents": {}
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
 }

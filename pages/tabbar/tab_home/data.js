@@ -1,279 +1,170 @@
 export const data = [{
-	"A": [{
-		"_id": {
-			"$oid": "60c62913e1e9391e420da9de"
-		},
-		"name": "安徽",
+	"letter": "A",
+	"list": [{
 		"code": "34",
-		"isclosed": false,
-		"letter": "A"
+		"letter": "A",
+		"name": "安徽"
 	}]
 }, {
-	"B": [{
-		"_id": {
-			"$oid": "60c62913e1e9391e420da9d7"
-		},
-		"name": "北京",
+	"letter": "B",
+	"list": [{
 		"code": "11",
-		"isclosed": false,
-		"letter": "B"
+		"letter": "B",
+		"name": "北京"
 	}]
 }, {
-	"C": [{
-		"_id": {
-			"$oid": "60c62913e1e9391e420da9da"
-		},
-		"name": "重庆",
+	"letter": "C",
+	"list": [{
 		"code": "50",
-		"isclosed": false,
-		"letter": "C"
+		"letter": "C",
+		"name": "重庆"
 	}]
 }, {
-	"F": [{
-		"_id": {
-			"$oid": "60c62913e1e9391e420da9e1"
-		},
-		"name": "福建",
+	"letter": "F",
+	"list": [{
 		"code": "35",
-		"isclosed": false,
-		"letter": "F"
+		"letter": "F",
+		"name": "福建"
 	}]
 }, {
-	"G": [{
-		"_id": {
-			"$oid": "60c62913e1e9391e420da9e4"
-		},
-		"name": "广东",
+	"letter": "G",
+	"list": [{
 		"code": "44",
-		"isclosed": false,
-		"letter": "G"
+		"letter": "G",
+		"name": "广东"
 	}, {
-		"_id": {
-			"$oid": "60c62913e1e9391e420da9e5"
-		},
-		"name": "广西",
 		"code": "45",
-		"isclosed": false,
-		"letter": "G"
+		"letter": "G",
+		"name": "广西"
 	}, {
-		"_id": {
-			"$oid": "60c62914e1e9391e420da9ef"
-		},
-		"name": "甘肃",
 		"code": "62",
-		"isclosed": false,
-		"letter": "G"
+		"letter": "G",
+		"name": "甘肃"
 	}, {
-		"_id": {
-			"$oid": "60c62914e1e9391e420da9f3"
-		},
-		"name": "贵州",
 		"code": "52",
-		"isclosed": false,
-		"letter": "G"
+		"letter": "G",
+		"name": "贵州"
 	}]
 }, {
-	"H": [{
-		"_id": {
-			"$oid": "60c62913e1e9391e420da9db"
-		},
-		"name": "河北",
+	"letter": "H",
+	"list": [{
 		"code": "13",
-		"isclosed": false,
-		"letter": "H"
+		"letter": "H",
+		"name": "河北"
 	}, {
-		"_id": {
-			"$oid": "60c62913e1e9391e420da9e6"
-		},
-		"name": "海南",
 		"code": "46",
-		"isclosed": false,
-		"letter": "H"
+		"letter": "H",
+		"name": "海南"
 	}, {
-		"_id": {
-			"$oid": "60c62913e1e9391e420da9e9"
-		},
-		"name": "黑龙江",
 		"code": "23",
-		"isclosed": false,
-		"letter": "H"
+		"letter": "H",
+		"name": "黑龙江"
 	}, {
-		"_id": {
-			"$oid": "60c62914e1e9391e420da9ea"
-		},
-		"name": "河南",
 		"code": "41",
-		"isclosed": false,
-		"letter": "H"
+		"letter": "H",
+		"name": "河南"
 	}, {
-		"_id": {
-			"$oid": "60c62914e1e9391e420da9eb"
-		},
-		"name": "湖南",
 		"code": "43",
-		"isclosed": false,
-		"letter": "H"
+		"letter": "H",
+		"name": "湖南"
 	}, {
-		"_id": {
-			"$oid": "60c62914e1e9391e420da9ec"
-		},
-		"name": "湖北",
 		"code": "42",
-		"isclosed": false,
-		"letter": "H"
+		"letter": "H",
+		"name": "湖北"
 	}]
 }, {
-	"J": [{
-		"_id": {
-			"$oid": "60c62913e1e9391e420da9e0"
-		},
-		"name": "江苏",
+	"letter": "J",
+	"list": [{
 		"code": "32",
-		"isclosed": false,
-		"letter": "J"
+		"letter": "J",
+		"name": "江苏"
 	}, {
-		"_id": {
-			"$oid": "60c62913e1e9391e420da9e2"
-		},
-		"name": "江西",
 		"code": "36",
-		"isclosed": false,
-		"letter": "J"
+		"letter": "J",
+		"name": "江西"
 	}, {
-		"_id": {
-			"$oid": "60c62913e1e9391e420da9e8"
-		},
-		"name": "吉林",
 		"code": "22",
-		"isclosed": false,
-		"letter": "J"
+		"letter": "J",
+		"name": "吉林"
 	}]
 }, {
-	"L": [{
-		"_id": {
-			"$oid": "60c62913e1e9391e420da9e7"
-		},
-		"name": "辽宁",
+	"letter": "L",
+	"list": [{
 		"code": "21",
-		"isclosed": false,
-		"letter": "L"
+		"letter": "L",
+		"name": "辽宁"
 	}]
 }, {
-	"N": [{
-		"_id": {
-			"$oid": "60c62913e1e9391e420da9dd"
-		},
-		"name": "内蒙古",
+	"letter": "N",
+	"list": [{
 		"code": "15",
-		"isclosed": false,
-		"letter": "N"
+		"letter": "N",
+		"name": "内蒙古"
 	}, {
-		"_id": {
-			"$oid": "60c62914e1e9391e420da9ee"
-		},
-		"name": "宁夏",
 		"code": "64",
-		"isclosed": false,
-		"letter": "N"
+		"letter": "N",
+		"name": "宁夏"
 	}]
 }, {
-	"Q": [{
-		"_id": {
-			"$oid": "60c62914e1e9391e420da9f0"
-		},
-		"name": "青海",
+	"letter": "Q",
+	"list": [{
 		"code": "63",
-		"isclosed": false,
-		"letter": "Q"
+		"letter": "Q",
+		"name": "青海"
 	}]
 }, {
-	"S": [{
-		"_id": {
-			"$oid": "60c62913e1e9391e420da9d8"
-		},
-		"name": "上海",
+	"letter": "S",
+	"list": [{
 		"code": "31",
-		"isclosed": false,
-		"letter": "S"
+		"letter": "S",
+		"name": "上海"
 	}, {
-		"_id": {
-			"$oid": "60c62913e1e9391e420da9dc"
-		},
-		"name": "山西",
 		"code": "14",
-		"isclosed": false,
-		"letter": "S"
+		"letter": "S",
+		"name": "山西"
 	}, {
-		"_id": {
-			"$oid": "60c62913e1e9391e420da9df"
-		},
-		"name": "山东",
 		"code": "37",
-		"isclosed": false,
-		"letter": "S"
+		"letter": "S",
+		"name": "山东"
 	}, {
-		"_id": {
-			"$oid": "60c62914e1e9391e420da9ed"
-		},
-		"name": "陕西",
 		"code": "61",
-		"isclosed": false,
-		"letter": "S"
+		"letter": "S",
+		"name": "陕西"
 	}, {
-		"_id": {
-			"$oid": "60c62914e1e9391e420da9f2"
-		},
-		"name": "四川",
 		"code": "51",
-		"isclosed": false,
-		"letter": "S"
+		"letter": "S",
+		"name": "四川"
 	}]
 }, {
-	"T": [{
-		"_id": {
-			"$oid": "60c62913e1e9391e420da9d9"
-		},
-		"name": "天津",
+	"letter": "T",
+	"list": [{
 		"code": "12",
-		"isclosed": false,
-		"letter": "T"
+		"letter": "T",
+		"name": "天津"
 	}]
 }, {
-	"X": [{
-		"_id": {
-			"$oid": "60c62914e1e9391e420da9f1"
-		},
-		"name": "新疆",
+	"letter": "X",
+	"list": [{
 		"code": "65",
-		"isclosed": false,
-		"letter": "X"
+		"letter": "X",
+		"name": "新疆"
 	}, {
-		"_id": {
-			"$oid": "60c62914e1e9391e420da9f5"
-		},
-		"name": "西藏",
 		"code": "54",
-		"isclosed": false,
-		"letter": "X"
+		"letter": "X",
+		"name": "西藏"
 	}]
 }, {
-	"Y": [{
-		"_id": {
-			"$oid": "60c62914e1e9391e420da9f4"
-		},
-		"name": "云南",
+	"letter": "Y",
+	"list": [{
 		"code": "53",
-		"isclosed": false,
-		"letter": "Y"
+		"letter": "Y",
+		"name": "云南"
 	}]
 }, {
-	"Z": [{
-		"_id": {
-			"$oid": "60c62913e1e9391e420da9e3"
-		},
-		"name": "浙江",
+	"letter": "Z",
+	"list": [{
 		"code": "33",
-		"isclosed": false,
-		"letter": "Z"
+		"letter": "Z",
+		"name": "浙江"
 	}]
 }]

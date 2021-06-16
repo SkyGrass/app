@@ -1,0 +1,10 @@
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["uview-ui/components/u-index-anchor/u-index-anchor"],{"28fa":function(t,e,n){},"366b":function(t,e,n){"use strict";n.r(e);var u=n("6464"),a=n.n(u);for(var r in u)"default"!==r&&function(t){n.d(e,t,(function(){return u[t]}))}(r);e["default"]=a.a},"557e":function(t,e,n){"use strict";var u;n.d(e,"b",(function(){return a})),n.d(e,"c",(function(){return r})),n.d(e,"a",(function(){return u}));var a=function(){var t=this,e=t.$createElement,n=(t._self._c,t.__get_style([t.wrapperStyle])),u=t.$u.guid(),a=t.__get_style([t.customAnchorStyle]);t.$mp.data=Object.assign({},{$root:{s0:n,g0:u,s1:a}})},r=[]},6464:function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0;var u={name:"u-index-anchor",props:{useSlot:{type:Boolean,default:!1},index:{type:String,default:""},customStyle:{type:Object,default:function(){return{}}}},data:function(){return{active:!1,wrapperStyle:{},anchorStyle:{}}},created:function(){this.parent=!1},mounted:function(){this.parent=this.$u.$parent.call(this,"u-index-list"),this.parent&&(this.parent.children.push(this),this.parent.updateData())},computed:{customAnchorStyle:function(){return Object.assign(this.anchorStyle,this.customStyle)}}};e.default=u},a0d5:function(t,e,n){"use strict";var u=n("28fa"),a=n.n(u);a.a},efdd:function(t,e,n){"use strict";n.r(e);var u=n("557e"),a=n("366b");for(var r in a)"default"!==r&&function(t){n.d(e,t,(function(){return a[t]}))}(r);n("a0d5");var c,i=n("f0c5"),o=Object(i["a"])(a["default"],u["b"],u["c"],!1,null,"19ccbd83",null,!1,u["a"],c);e["default"]=o.exports}}]);
+;(global["webpackJsonp"] = global["webpackJsonp"] || []).push([
+    'uview-ui/components/u-index-anchor/u-index-anchor-create-component',
+    {
+        'uview-ui/components/u-index-anchor/u-index-anchor-create-component':(function(module, exports, __webpack_require__){
+            __webpack_require__('543d')['createComponent'](__webpack_require__("efdd"))
+        })
+    },
+    [['uview-ui/components/u-index-anchor/u-index-anchor-create-component']]
+]);

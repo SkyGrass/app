@@ -1,0 +1,1 @@
+<view class="content"><u-empty vue-id="d2e17b74-1" text="{{noMsgTxt}}" mode="message" bind:__l="__l"></u-empty></view>
